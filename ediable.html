@@ -1,0 +1,128 @@
+<!DOCTYPE html><html class="" lang=""><head><script type="text/javascript" class="silex-json-styles" data-silex-static="">
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":1200},"pages":[{"id":"page-page-1","displayName":"Page 1","link":{"linkType":"LinkTypePage","href":"#!page-page-1"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}</script>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery-ui.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/pageable.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.12/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.12/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.12/front-end.css" data-silex-static="">
+
+    <style class="silex-style">#game-container {width: 400px; height: 400px; position: relative;}#player {width: 50px; height: 50px; background-color: blue; position: absolute; bottom: 0; left: 0;}#enemy {width: 50px; height: 50px; background-color: red; position: absolute; top: 0; right: 0;}</style>
+    <script type="text/javascript" class="silex-script">// Get the player and enemy elements
+let player = document.getElementById("player");
+let enemy = document.getElementById("enemy");
+// Set the initial position of the enemy
+let enemyPosition = 0;
+// Move the enemy down the screen every 10 milliseconds
+let enemyInterval = setInterval(() => {
+	enemyPosition += 10;
+	enemy.style.top = `${enemyPosition}px`;
+	// If the enemy reaches the bottom of the screen, reset its position
+	if (enemyPosition >= 350) {
+		enemyPosition = 0;
+		enemy.style.right = `${enemyPosition}px`;
+	}
+}, 10);
+// Move the player left and right when the user presses the arrow keys
+document.addEventListener("keydown", event => {
+	if (event.key === "ArrowLeft") {
+		let playerPosition = parseInt(player.style.left);
+		playerPosition -= 10;
+		player.style.left = `${playerPosition}px`;
+	} else if (event.key === "ArrowRight") {
+		let playerPosition = parseInt(player.style.left);
+		playerPosition += 10;
+		player.style.left = `${playerPosition}px`;
+	}
+});
+// Check for collisions between the player and enemy every 10 milliseconds
+let collisionInterval = setInterval(() => {
+	let playerRect = player.getBoundingClientRect();
+	let enemyRect = enemy.getBoundingClientRect();
+	if (playerRect.right >= enemyRect.left && playerRect.left <= enemyRect.right && playerRect.bottom >= enemyRect.top && playerRect.top</script>
+    <style class="silex-inline-styles">.body-initial {background-color: rgba(255,255,255,1); position: static;}.silex-id-1478366444112-1 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366444112-0 {background-color: transparent; min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1474394621033-3 {position: static; margin-top: -1px;}.silex-id-1474394621032-2 {background-color: transparent; min-height: 600px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1478366450713-3 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366450713-2 {background-color: transparent; min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1442914737143-3 {width: 241px; top: 26px; left: 494px; min-height: 51px; position: absolute;}.silex-id-1679065437230-0 {width: 736px; min-height: 442px; background-color: rgb(255, 255, 255); position: absolute; top: 14px; left: 53px;}@media only screen and (max-width: 480px) {}</style>
+    <title></title>
+    
+
+    
+<style class="silex-prodotype-style" data-style-id="all-style">.text-element > .silex-element-content {font-family: 'Roboto', sans-serif;}</style><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><style class="silex-style-settings">.website-width {width: 1200px;}@media (min-width: 481px) {.silex-editor {min-width: 1400px;}}</style><!-- Silex HEAD tag do not remove --><!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Your website content goes here -->
+</body>
+</html>
+
+<!-- End of Silex HEAD tag do not remove --></head>
+
+<body data-silex-id="body-initial" class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime" data-silex-type="container-element" style="">
+    
+
+
+
+
+
+
+
+
+
+    <section data-silex-type="container-element" class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable page-page-1 paged-element" data-silex-id="silex-id-1478366444112-1">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width" data-silex-id="silex-id-1478366444112-0"></div>
+    </section>
+    <section data-silex-type="container-element" class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable page-page-1 paged-element" data-silex-id="silex-id-1474394621033-3">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width selected" data-silex-id="silex-id-1474394621032-2"><div data-silex-type="html-element" class="editable-style html-element silex-id-1679065437230-0" data-silex-id="silex-id-1679065437230-0" style=""><div class="silex-element-content">
+
+
+
+	<meta charset="UTF-8">
+	<title>My Game</title>
+	<link rel="stylesheet" href="style.css">
+
+
+	<div id="game-container">
+		<div id="player"></div>
+		<div id="enemy"></div>
+	</div>
+	<script src="game.js"></script>
+
+
+
+
+</div></div></div>
+    </section>
+    <section data-silex-type="container-element" class="container-element editable-style silex-id-1478366450713-3 section-element prevent-resizable page-page-1 paged-element" data-silex-id="silex-id-1478366450713-3">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366450713-2 container-element website-width" data-silex-id="silex-id-1478366450713-2">
+
+            <div data-silex-id="silex-id-1442914737143-3" class="editable-style silex-id-1442914737143-3 text-element" data-silex-type="text-element">
+                <div class="silex-element-content normal"><p>Powered by <a href="https://www.silex.me/" target="_blank" title="Silex website builder,  free and open source" linktype="LinkTypeExternal">Silex website builder</a></p></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
